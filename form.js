@@ -29,7 +29,7 @@ const Note = mongoose.model('Note', noteSchema);
 
 // Serve the HTML form on GET request
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/Form.html');
+    res.sendFile(__dirname + './Form.html');
 });
 
 // Handle form submission on POST request
