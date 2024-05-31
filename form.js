@@ -10,7 +10,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
 mongoose.connect(process.env.URL);
-//password-5Wu5fE28HGhlx8g4
 
 
 const db = mongoose.connection;
