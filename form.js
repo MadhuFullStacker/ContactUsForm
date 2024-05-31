@@ -7,6 +7,8 @@ const port = process.env.PORT || 5000;
 
 // Middleware to parse URL-encoded bodies (from HTML forms)
 app.use(bodyParser.urlencoded({ extended: true }));
+// Middleware to serve static files
+app.use(express.static(__dirname)); // Serve static files from the root directory
 
 // Connect to MongoDB
 mongoose.connect(process.env.URL);
